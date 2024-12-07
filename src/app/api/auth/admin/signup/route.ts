@@ -1,9 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
-import { connect } from "@/database/mongo.config";
+// import { connect } from "@/database/mongo.config";
 import { User } from "@/models/User";
 import bcrypt from "bcryptjs";
 
-connect();
+// connect();
 export async function POST(request: NextRequest) {
   const salt = bcrypt.genSaltSync(10);
   const password = bcrypt.hashSync("123456", salt);

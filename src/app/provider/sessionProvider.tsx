@@ -10,3 +10,4 @@ interface Props {
 export default function NextAuthSessionProvider({ children }: Props) {
   return <SessionProvider>{children}</SessionProvider>;
 }
+

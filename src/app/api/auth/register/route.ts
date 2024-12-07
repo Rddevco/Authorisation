@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { connect } from "@/database/mongo.config";
+// import { connect } from "@/database/mongo.config";
 import { User } from "@/models/User";
 import { registerSchema } from "@/validator/authValidationSchema";
 import vine, { errors } from "@vinejs/vine";
@@ -13,7 +13,7 @@ interface UserPayload {
   avtar?: string;
 }
 
-connect();
+// connect();
 export async function POST(request: NextRequest) {
   try {
     const body: UserPayload = await request.json();

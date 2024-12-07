@@ -8,7 +8,7 @@ export default function MagicLinkEmail({
   params,
 }: {
   params: { name: string; url: string };
-}) {
+}) {  
   return (
     <Html>
       <Heading as="h2"> Hello {params.name} </Heading>
@@ -27,7 +27,7 @@ export default function MagicLinkEmail({
       <Hr />
 
       <Heading as="h3">Regards</Heading>
-      <Text>Coding with Tushar</Text>
+      <Text>Coding with Rahul Rddevco</Text>
     </Html>
   );
 }

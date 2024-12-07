@@ -6,9 +6,9 @@ import Env from "@/config/env";
 import { render } from "@react-email/render";
 import MagicLinkEmail from "@/emails/MagicLinkEmail";
 import { sendEmail } from "@/config/mail";
-import { connect } from "@/database/mongo.config";
+// import { connect } from "@/database/mongo.config";
 
-connect();
+// connect();
 
 export async function POST(request: NextRequest) {
   const payload: MagicLinkPayload = await request.json();

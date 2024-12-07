@@ -1,6 +1,6 @@
 import vine, { errors } from "@vinejs/vine";
 import { NextRequest, NextResponse } from "next/server";
-import { connect } from "@/database/mongo.config";
+// import { connect } from "@/database/mongo.config";
 import ErrorReporter from "@/validator/ErrorReporter";
 import { loginSchema } from "@/validator/authValidationSchema";
 import { User } from "@/models/User";
@@ -8,7 +8,8 @@ import bcrypt from "bcryptjs";
 import { signIn } from "next-auth/react";
 
 // * Connect to the DB
-connect();
+
+// connect();
 
 export async function POST(request: NextRequest) {
   try {
