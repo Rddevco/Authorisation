@@ -7,7 +7,7 @@ import { render } from "@react-email/render";
 import ForgotPasswordEmail from "@/emails/ForgotPasswordEmail";
 import { sendEmail } from "@/config/mail";
 import { connect } from "@/database/mongo.config";
-
+//import { connect } from "@/database/mongo.config";import { connect } from "@/database/mongo.config";
 connect();
 
 
