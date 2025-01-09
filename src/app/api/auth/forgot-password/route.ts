@@ -10,6 +10,7 @@ import { connect } from "@/database/mongo.config";
 
 connect();
 
+
 export async function POST(request: NextRequest) {
   const payload: ForgotPasswordPayload = await request.json();
 

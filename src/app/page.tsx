@@ -7,9 +7,9 @@ import HomeHere from "@/components/homeHere";
 
 export default async function Home() {
   const session = await getServerSession(authOptions);
-  // if (!session) {
-  //   redirect("/login");
-  // }
+  if (!session) {
+    redirect("/login");
+  }
   return (
     <main className="h-full">
       <HomeHere />
